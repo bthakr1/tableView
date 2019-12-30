@@ -10,7 +10,20 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let list = ["BT","Payel","Charlie","Ziva"]
+    let list = ["BT","Payel","Charlie","Ziva","Dog","Cat","Titanic","March","April","May","June","July","August","September","October","November",
+    "December","January","Feb","Mar","Apr","May"]
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -25,12 +38,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(cell)
     }
     
+      
+        
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+    
+    
+    
 
 }
 
